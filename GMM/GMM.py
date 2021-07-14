@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-#Name: Sanvi Reddy
-#Registration number: B19193
-#Contact number: 7675851126 
+
 
 #importing the required modules
 import numpy as np
