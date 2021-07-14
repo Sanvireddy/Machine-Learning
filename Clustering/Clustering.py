@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
-#Name: Sanvi Reddy
-#Registration number: B19193
-#Contact number: 7675851126 
+
 
 #importing the required modules
 import pandas as pd
@@ -39,7 +37,7 @@ kmeans.fit(train_data)
 kmeans_prediction = kmeans.predict(train_data)
 
 #**********************************************
-print('Question-1(a)')
+
 
 #obtaining scatter plot of data points
 #after assigning them to different clusters
@@ -56,7 +54,7 @@ plt.title('K Means of train data')
 plt.show()
 
 #**************************************************
-print('Question-1(b)')
+
 print('')
 
 #defining a function to evaluate purity score
@@ -74,7 +72,7 @@ print('')
 
 #**************************************************
 
-print('Question-1(c)')
+
 
 #assigning the test examples onto cluster 
 #plotting the test data points with different colours
@@ -102,7 +100,6 @@ print('Purity score of test data(KMeans) is',t1)
 #****************************************************
 
 print('')
-print('Question-2(a)')
 
 #fitting the train data into gmm model
 #with 10 clusters
@@ -125,7 +122,7 @@ plt.show()
 #******************************************************
 
 print('')
-print('Question-2(b)')
+
 
 #computing the purity score after training examples are assigned to clusters
 p2=purity_score(l1,GMM_prediction)
@@ -133,7 +130,7 @@ print('Purity score of train data(GMM) is',p2)
 
 #******************************************************
 print('')
-print('Question-2(c)')
+
 
 #assigning the test examples onto cluster
 #plotting the test data points with different colours for each clusters
@@ -186,7 +183,7 @@ print('')
 
 #***********************************************************
 
-print('Question-3(c)')
+
 
 #fitting the test data into the predicted model
 #assigning the test examples onto cluster
@@ -220,7 +217,7 @@ plt.show()
 
 #***********************************************
 
-print('Question-3(d)')
+
 
 #Computing the purity score 
 #after training examples are assigned to clusters
