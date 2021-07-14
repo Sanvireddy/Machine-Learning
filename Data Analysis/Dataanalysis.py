@@ -4,9 +4,7 @@ Created on Thu Sep 24 16:10:02 2020
 
 @author: Sanvi Reddy
 """
-#Name : Sanvi Reddy
-#Registration number : B19193
-#Contact number : 7675851126
+
 
 #importing the required modules
 import matplotlib.pyplot as plt
@@ -14,9 +12,9 @@ import pandas as pd
 import numpy as np
 from pandas import DataFrame
 #reading csv file
-data=pd.read_csv(r'C:\Users\Sanvi Reddy\Downloads\landslide_data3.csv').fillna(value=0)
+data=pd.read_csv(r'landslide_data3.csv').fillna(value=0)
 dl=['temperature','humidity','pressure','rain','lightavgw/o0','lightmax','moisture']
-print("Question-1")
+
 #creating empty lists of mean, mode, median, minimum, maximum, standard deviaton and storing the respective values in it
 Mean=[]
 Median=[]
@@ -45,7 +43,7 @@ for i in range(len(dl)):
     print("Standard Deviation of " + dl[i] + " is " + str(Standard_Deviation[i]))
     print('   ')
 #************************************************
-print("Question-2(a)")
+
 #creating list of attributes which we have to plot against rain
 dq=['temperature','humidity','pressure','lightavgw/o0','lightmax','moisture']
 
@@ -63,7 +61,7 @@ for j in range(len(dq)):
     plt.show()  
     
 #************************************************    
-print("Question-2(b)") 
+
 #creating list of attributes which we have to plot against temperature   
 dp=['humidity','pressure','rain','lightavgw/o0','lightmax','moisture']
 for k in range(len(dp)):
@@ -83,7 +81,7 @@ print(' ')
 #************************************************   
 
 
-print("Question-3(a)")
+
 for j in range(len(dq)):
     x=data.rain
     y=data[dq[j]]
@@ -101,7 +99,7 @@ print("\n")
 #************************************************
 
 #obtaining a histogram using in-built function 
-print("Question-4")
+
 #histogram of attribute rain
 p=data['rain']
 p.hist()
@@ -121,7 +119,7 @@ print(' ')
 
 
 #**********************************************************")
-print("Question-5")
+
 y=data['rain']
 x=data['stationid']
 df = DataFrame({'id':x, 'reading':y})
@@ -137,7 +135,7 @@ for group in grouped:
 print(' ')
 
 #*********************************************************************
-print("Question-6")
+
 data.boxplot(column='rain',grid=False,whis=[15,99])
 plt.ylabel('rain(in mm)')
 plt.title('Boxplot for rain')
